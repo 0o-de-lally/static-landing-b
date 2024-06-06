@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Viewer</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            white-space: pre;
+        }
+        #content {
+            padding: 20px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>ASCII Art Viewer</h1>
+    <div id="content">Loading...</div>
+    <script>
+        fetch('art.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').textContent = data;
+            })
+            .catch(error => {
+                document.getElementById('content').textContent = 'Error loading the file.';
+                console.error('Error fetching the text file:', error);
+            });
+    </script>
+</body>
+</html>
