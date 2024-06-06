@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASCII Art Viewer</title>
     <style>
         body {
             font-family: "Courier New", Courier, monospace;
-            white-space: pre;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
         }
         #content {
             padding: 20px;
             border: 1px solid #000;
-            background-color: #f0f0f0;
+            background-color: #fff;
             white-space: pre-wrap;
+            max-width: 100%;
+            overflow-x: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            #content {
+                font-size: 12px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>ASCII Art Viewer</h1>
     <div id="content">Loading...</div>
     <script>
         fetch('art.txt')
