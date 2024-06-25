@@ -47,7 +47,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      background: linear-gradient(135deg, #1a1a1a, #e91e63, #ff5722);
       text-align: center;
       color: #fff;
       padding: 2rem;
@@ -104,6 +104,19 @@
       border-radius: 5px;
     }
 
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
     footer {
       background: #2a2a2a;
       color: #e91e63;
@@ -119,7 +132,6 @@
     }
   </style>
 </head>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53Q2XHLFL2"></script>
 <script>
@@ -171,7 +183,21 @@
     </section>
     <section id="team" class="team">
       <h2>Team</h2>
-      <p>Brief bios of the core team members, including photos and LinkedIn profiles.</p>
+      <div class="team-member">
+        <img src="https://ml.globenewswire.com/Resource/Download/3ebdbdb1-2990-4a4f-83d8-bd4186d6f878" alt="Team Member">
+        <div>
+          <p><strong>John Doe</strong></p>
+          <p>Founder & CEO</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="https://ml.globenewswire.com/Resource/Download/88e9ae71-5fdc-4797-b812-36edafcc4967" alt="Team Member">
+        <div>
+          <p><strong>Jane Smith</strong></p>
+          <p>CTO</p>
+        </div>
+      </div>
+      <!-- Add more team members as needed -->
     </section>
     <section id="roadmap" class="roadmap">
       <h2>Roadmap</h2>
@@ -187,28 +213,7 @@
     </section>
     <section id="fundamentals" class="fundamentals">
       <h2>Fundamentals</h2>
-      <h3>Whitepaper</h3>
-      <p>WLIBRA's whitepaper is your go-to for everything we aim to crush. From goals to tech, it’s all there, laying out how we're solving crypto's biggest issues.</p>
-      <h3>Team</h3>
-      <p>We’ve got a crew of blockchain legends, finance gurus, and dev wizards. Our team’s packed with experience and passion to take WLIBRA to the moon.</p>
-      <h3>Technology</h3>
-      <p>WLIBRA’s tech is top-tier. With the Move virtual machine and DK-BFT consensus, we’re outperforming the competition. Our Delta neutral TVL and Summa PoS strategies are game-changers.</p>
-      <h3>Use Case and Utility</h3>
-      <p>WLIBRA isn’t just another coin. We’re filling the gaps in the crypto world with real solutions. From fully collateralized coins to cutting-edge governance, we’re built for serious use.</p>
-      <h3>Tokenomics</h3>
-      <p>Our tokenomics are rock-solid. With features like ultrasound money and an inelastic supply, we’re creating a stable, profitable ecosystem for everyone.</p>
-      <h3>Community and Adoption</h3>
-      <p>Our community is buzzing and growing every day. We’re making strategic moves with partnerships and constantly engaging with our users to keep the momentum going.</p>
-      <h3>Development Activity</h3>
-      <p>We’re always building. Our devs are pumping out updates and new features regularly, keeping WLIBRA ahead of the curve.</p>
-      <h3>Regulatory Environment</h3>
-      <p>We’re all about playing by the rules. WLIBRA is fully compliant with regulations, making sure we’re here for the long haul.</p>
-      <h3>Market Position and Competition</h3>
-      <p>WLIBRA stands out from the crowd with unique features and solid tech. We’re not just keeping up; we’re leading the way in the blockchain space.</p>
-      <h3>Security</h3>
-      <p>Security is our top priority. We’ve got state-of-the-art measures and regular audits to keep our network and users safe.</p>
-      <h3>Economic Metrics</h3>
-      <p>WLIBRA’s market cap, trading volume, and liquidity show strong interest and confidence from investors. We’re dedicated to maintaining a vibrant and thriving ecosystem.</p>
+      <!-- Add fundamentals content here -->
     </section>
   </main>
   <footer>
